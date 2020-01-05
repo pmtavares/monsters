@@ -1,9 +1,8 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
+import {CardList} from './components/card-list/card-list.component';
 
 
-//function App() {
 class App extends React.Component {
   constructor()
   {
@@ -27,9 +26,10 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        {
-          this.state.monsters.map(monster => <p key={monster.id}>{monster.name}</p>)
-        }
+        <CardList monsters={this.state.monsters}>
+          
+        </CardList>
+       
       </div>
     );
   }
