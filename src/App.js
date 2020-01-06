@@ -28,7 +28,9 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <SearchBox placeholder="Search monster" handleChange={(e) =>this.setState({searchField: e.target.value})}/>
+        <h3>Monsters from Rolodex</h3>
+        <SearchBox placeholder="Search monster" 
+                    handleChange={(e) =>this.setState({searchField: e.target.value})}/>
         <CardList monsters={filteredMonsters}>          
         </CardList>
        
